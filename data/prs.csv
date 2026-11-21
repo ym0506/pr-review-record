@@ -1,0 +1,22 @@
+repo,number,url,opened,closed,days_open,outcome,changes_requested_rounds
+apache/fineract,6731,https://github.com/apache/fineract/pull/6731,2026-10-24,2026-10-26,2.0,"merged, no change asked",0
+apache/shardingsphere,38187,https://github.com/apache/shardingsphere/pull/38187,2026-02-25,2026-02-25,0.5,"merged, no change asked",0
+apache/shardingsphere,38206,https://github.com/apache/shardingsphere/pull/38206,2026-02-26,2026-02-26,0.1,"merged, no change asked",0
+apache/shardingsphere,38223,https://github.com/apache/shardingsphere/pull/38223,2026-02-26,2026-02-27,0.6,"merged, no change asked",0
+apache/shardingsphere,38326,https://github.com/apache/shardingsphere/pull/38326,2026-03-04,2026-03-04,0.0,"not merged, closed by ym0506",0
+apache/shardingsphere,38327,https://github.com/apache/shardingsphere/pull/38327,2026-03-04,2026-03-04,0.3,merged after changes requested,1
+apache/shardingsphere,38352,https://github.com/apache/shardingsphere/pull/38352,2026-03-05,2026-03-06,1.4,merged after changes requested,1
+apache/shardingsphere,38405,https://github.com/apache/shardingsphere/pull/38405,2026-03-12,2026-06-09,88.7,merged after comments,0
+apache/shardingsphere,38449,https://github.com/apache/shardingsphere/pull/38449,2026-03-16,2026-06-22,98.4,merged after changes requested,5
+apache/shardingsphere,38659,https://github.com/apache/shardingsphere/pull/38659,2026-04-29,2026-06-28,60.4,merged after changes requested,2
+apache/shardingsphere,38685,https://github.com/apache/shardingsphere/pull/38685,2026-05-11,2026-05-28,17.0,merged after changes requested,4
+apache/shardingsphere,39535,https://github.com/apache/shardingsphere/pull/39535,2026-08-21,2026-08-22,1.2,"merged, no change asked",0
+apache/shardingsphere,39764,https://github.com/apache/shardingsphere/pull/39764,2026-09-07,2026-09-14,6.4,"merged, no change asked",0
+dolthub/go-mysql-server,3442,https://github.com/dolthub/go-mysql-server/pull/3442,2026-02-23,2026-02-24,1.5,merged after comments,0
+open-telemetry/opentelemetry-java-instrumentation,20020,https://github.com/open-telemetry/opentelemetry-java-instrumentation/pull/20020,2026-09-08,2026-09-12,4.8,merged after comments,0
+kubernetes/kubernetes,136090,https://github.com/kubernetes/kubernetes/pull/136090,2026-01-08,2026-07-10,183.3,"not merged, closed by kubernetes-prow",0
+kubernetes/kubernetes,136101,https://github.com/kubernetes/kubernetes/pull/136101,2026-01-08,2026-06-13,155.7,"not merged, closed by k8s-ci-robot",0
+testcontainers/testcontainers-java,11484,https://github.com/testcontainers/testcontainers-java/pull/11484,2026-02-03,2026-06-22,138.8,"not merged, closed by ym0506",0
+testcontainers/testcontainers-java,11488,https://github.com/testcontainers/testcontainers-java/pull/11488,2026-02-06,2026-06-22,136.1,"not merged, closed by ym0506",0
+quarkiverse/quarkus-shardingsphere-jdbc,357,https://github.com/quarkiverse/quarkus-shardingsphere-jdbc/pull/357,2026-08-29,2026-08-31,1.7,"not merged, closed by zhfeng",0
+HsinDumas/shardingsphere-jdbc-spring-boot-starter,4,https://github.com/HsinDumas/shardingsphere-jdbc-spring-boot-starter/pull/4,2026-08-31,2026-09-18,17.9,"not merged, closed by HsinDumas",1
