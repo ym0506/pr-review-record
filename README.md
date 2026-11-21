@@ -4,7 +4,7 @@ In 2026 I opened 21 pull requests to open-source projects I do not maintain. Thi
 
 Everything here comes from the GitHub API. `build_record.py` rebuilds the two files in `data/` and prints the numbers below. The last run was on 21 November 2026.
 
-Not counted: pull requests in my own repositories, in a team repository I belong to, and one documentation fix in another student's study repository.
+Not counted: pull requests in my own repositories, in a team repository I belong to, and one documentation fix in another student's study repository. #38326 and #38327 are the same change opened twice on one day, so the 21 pull requests are 20 distinct changes.
 
 ## Outcome
 
@@ -17,9 +17,9 @@ Not counted: pull requests in my own repositories, in a team repository I belong
 
 14 of 21 were merged: ShardingSphere 11, Fineract 1, OpenTelemetry 1, go-mysql-server 1.
 
-## The 13 "changes requested" rounds
+## The 13 "changes requested" rounds on merged pull requests
 
-Each round number links to the review. The group is my own reading of the reviewer's main blocker, one group per round.
+Each round number links to the review. The group is my own reading of the reviewer's main blocker, one group per round. A fourteenth "changes requested" round, on a pull request that was not merged, is described in the last table.
 
 - A: the fix left part of the failure path unrepaired
 - B: the change would break existing data or existing runs
@@ -53,7 +53,7 @@ Each round number links to the review. The group is my own reading of the review
 
 Nine of the 13 rounds (A, B, C) were about behavior that my own tests had not covered.
 
-In 12 of the 13 rounds every check recorded on GitHub for the reviewed commit had passed. The exception is #38449 round 2. Both whitespace rounds are among the 12.
+In 12 of the 13 rounds every check recorded on GitHub for the reviewed commit had passed. The exception is #38449 round 2. Both whitespace rounds are among the 12, so for the nine rounds about behavior (A, B, C) the figure is 8 of 9.
 
 In the three pull requests merged after comments: a maintainer asked for an end-to-end test (#38405); a reviewer asked me to move tests to another file and removed a claim from my description that the pull request did not test (#3442); an automated reviewer pointed out that a configuration fallback read a process-wide setting where it should read the instance passed in (#20020).
 
@@ -79,7 +79,7 @@ Days open are not effort. I did not log hours, so this record cannot say what th
 
 - Hours. It has rounds, dates and outcomes only.
 - The check results are the ones GitHub shows now for each reviewed commit. A check that was re-run later shows its last result.
-- One reviewer wrote 12 of the 13 rounds, so the groups say more about one project's standards than about open source in general.
+- One reviewer wrote all 13 rounds, so the groups say more about one project's standards than about open source in general.
 - The grouping is mine. Someone else reading the same reviews could draw the lines differently, which is why each round links to its review. Three rounds were close calls: #38449 round 1 raised an unfinished fix and a compatibility break together (I put it in A, it could be B), and #38449 rounds 4 and 5 were worded as missing proof (I put them in A, they could be D).
 
 ## Rebuild
