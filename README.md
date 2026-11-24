@@ -57,6 +57,23 @@ In 12 of the 13 rounds every check recorded on GitHub for the reviewed commit ha
 
 In the three pull requests merged after comments: a maintainer asked for an end-to-end test (#38405); a reviewer asked me to move tests to another file and removed a claim from my description that the pull request did not test (#3442); an automated reviewer pointed out that a configuration fallback read a process-wide setting where it should read the instance passed in (#20020).
 
+## Rework after the first requested change
+
+For the five merged pull requests that got "changes requested" reviews, `rework.py` counts the commits dated after the first such review and the lines they changed. On every commit the author date and the commit date are the same or minutes apart, so no rebase moved a commit across that line. One merge commit from the base branch is left out.
+
+| Pull request | First version (lines changed) | Rework commits | Rework (lines changed) |
+|---|---|---|---|
+| #38327 | 37 | 1 | 68 |
+| #38352 | 312 | 3 | 48 |
+| #38449 | 230 | 8 | 1,650 |
+| #38659 | 172 | 2 | 219 |
+| #38685 | 60 | 5 | 164 |
+| Total | 811 | 19 | 2,149 |
+
+In four of the five, the lines changed after the first request outnumbered the first version. In total the rework was more than twice the first version, and #38449 accounts for most of it.
+
+"Lines changed" counts additions plus deletions in each commit, so a line rewritten twice counts twice. In #38352, 302 of the 312 lines in the first version are a 151-line note file that I added in the first commit and removed in the second. Without it the first version is 10 lines, and the rework outnumbered the first version in all five.
+
 ## Time
 
 From opening to merge, the median for the 14 merged pull requests was 1.75 days. Ten merged within 7 days, one took 17 days, and three took 60, 89 and 98 days. The 89-day one (#38405) got its only request on the first day and then waited for a reviewer.
@@ -77,7 +94,7 @@ Days open are not effort. I did not log hours, so this record cannot say what th
 
 ## What this record does not show
 
-- Hours. It has rounds, dates and outcomes only.
+- Hours. It has rounds, dates, outcomes and lines changed, not time spent.
 - The check results are the ones GitHub shows now for each reviewed commit. A check that was re-run later shows its last result.
 - One reviewer wrote all 13 rounds, so the groups say more about one project's standards than about open source in general.
 - The grouping is mine. Someone else reading the same reviews could draw the lines differently, which is why each round links to its review. Three rounds were close calls: #38449 round 1 raised an unfinished fix and a compatibility break together (I put it in A, it could be B), and #38449 rounds 4 and 5 were worded as missing proof (I put them in A, they could be D).
@@ -86,6 +103,7 @@ Days open are not effort. I did not log hours, so this record cannot say what th
 
 ```bash
 python3 build_record.py
+python3 rework.py
 ```
 
-It needs the GitHub CLI (`gh`) logged in. It writes `data/prs.csv` (one row per pull request) and `data/rounds.csv` (one row per "changes requested" round, with the link to the review and the check results).
+`python3 rework.py` rebuilds the rework table. Both need the GitHub CLI (`gh`) logged in. `build_record.py` writes `data/prs.csv` (one row per pull request) and `data/rounds.csv` (one row per "changes requested" round, with the link to the review and the check results).

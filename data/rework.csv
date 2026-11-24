@@ -1,0 +1,6 @@
+number,first_changes_requested,approved,commits_before,lines_before,rework_commits,rework_lines,merge_commits_left_out
+38327,2026-03-04,2026-03-04,1,37,1,68,0
+38352,2026-03-05,2026-03-06,2,312,3,48,0
+38449,2026-03-16,2026-06-22,3,230,8,1650,1
+38659,2026-05-28,2026-06-28,1,172,2,219,0
+38685,2026-05-24,2026-05-28,2,60,5,164,0
